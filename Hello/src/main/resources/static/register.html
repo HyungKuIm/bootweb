@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/main_style.css">
+</head>
+<body>
+<section class="sign-page fix"><!--Start About Area-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+	
+	<div class="remark_text">( <span class="color">*</span> 는 필수입력 사항입니다.)</div>
+	<!-- 회원가입 폼 S -->
+	<form id="userForm" name="userForm" action="/register" method="post">
+		<div class="form_line_bx">
+			<!-- 이름 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt>
+						<label for="uname" class="label_text">이름<span class="necessary">*</span></label>
+					</dt>
+					<dd>
+
+						<div class="bs_pr_bx max_300">
+							<div class="bs_inputbx">
+                                            <input type="text" id="uname" name="uname" title="이름" class="form-control" description="이름" placeholder="이름" />
+							</div>
+						</div>
+						<div class="join_remember">
+							<input type="checkbox" id="chk_com" name="chk_com" value="true" />
+							<p>기업/회사명으로 등록시 체크해주세요.</p>
+						</div>
+						<font id="chk_name" name="chk_name" style="paddig-top:2px;"></font>
+					</dd>
+				</dl>
+			</div>
+			<!-- .이름 -->
+			<!-- 아이디 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="uid" class="label_text">아이디<span class="necessary">*</span></label></dt>
+					<dd>
+
+						<div class="bs_pr_bx max_300">
+							<div class="bs_inputbx">
+                                            <input type="text" id="uid" name="uid" title="아이디" class="form-control" description="아이디" placeholder="아이디" />
+							</div>
+						</div>
+						<span><font id="chk_id" name="chk_id"></font></span>
+					</dd>
+				</dl>
+			</div>
+			<!-- .아이디 -->
+			<!-- 비밀번호 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="pwd" class="label_text">비밀번호<span class="necessary">*</span></label></dt>
+					<dd>
+						<div class="bs_pr_bx max_300">
+							<div class="bs_inputbx">
+                                           <input type="password" id="pwd" name="pwd" title="비밀번호" class="form-control" description="비밀번호" placeholder="비밀번호" />
+							</div>
+
+						</div>
+						<font id="chk_pwd" name="chk_pwd"></font>
+					</dd>
+				</dl>
+			</div>
+			<!-- .비밀번호 -->
+			<!-- 비밀번호 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="pwd_check" class="label_text">비밀번호확인<span class="necessary">*</span></label></dt>
+					<dd>
+						<div class="bs_pr_bx max_300">
+							<div class="bs_inputbx">
+                                           <input type="password" id="pwd_check" name="pwd_check" title="비밀번호" class="form-control" description="비밀번호" placeholder="비밀번호확인" />
+							</div>
+						</div>
+						<font id="chk_re_pwd" name="chk_re_pwd"></font>
+					</dd>
+				</dl>
+			</div>
+			<!-- .비밀번호 -->
+			<!-- 이메일 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="pwd_check" class="label_text">이메일<span class="necessary">*</span></label></dt>
+					<dd>
+						<div class="form_email_bx">
+							<ul>
+								<li>
+									<div class="bs_pr_bx max_600">
+										<div class="bs_inputbx">
+											 <input type="text" id="email1" name="email1" class="input_text_l" />
+										</div>
+									</div>
+								</li>
+								<div class="input-group-email">@</div>
+								<li>
+									<div class="bs_pr_bx max_600">
+										<div class="bs_inputbx">
+											<input type="text" id="email2" name="email2" class="input_text_l" />
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="mail_seletbx" >
+										<select id="emailAddress" name="emailAddress">
+											<option value="">직접입력</option>
+											<option value="hanmail.net">hanmail.net</option>
+											<option value="naver.com">naver.com</option>
+											<option value="nate.com">nate.com</option>
+											<option value="hotmail.com">hotmail.com</option>
+											<option value="empal.com">empal.com</option>
+											<option value="lycos.co.kr">lycos.co.kr</option>
+											<option value="paran.com">paran.com</option>
+											<option value="daum.net">daum.net</option>
+											<option value="korea.com">korea.com</option>
+											<option value="dreamwiz.com">dreamwiz.com</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="freechal.com">freechal.com</option>
+											<option value="hanmir.com">hanmir.com</option>
+											<option value="hanafos.com">hanafos.com</option>
+											<option value="netian.com">netian.com</option>
+											<option value="msn.com">msn.com</option>
+											<option value="cyworld.com">cyworld.com</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<font id="chk_email" name="chk_email"></font>
+					</dd>
+				</dl>
+			</div>
+			<!-- .이메일 -->
+			<!-- 핸드폰번호 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="pwd_check" class="label_text">연락처<span class="necessary">*</span></label></dt>
+					<dd>
+						<div class="form_tel_bx">
+							<ul>
+								<li>
+									<div class="form_seletbx">
+										<select id="phone1" name="phone1">
+											<option selected>010</option>
+											<option>011</option>
+											<option>016</option>
+											<option>017</option>
+											<option>018</option>
+											<option>019</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="bs_inputbx">
+                                                    <input type="text" id="phone2" name="phone2" class="input_text" maxlength="4" />
+									</div>
+								</li>
+								<li>
+									<div class="bs_inputbx">
+                                                    <input type="text" id="phone3" name="phone3" class="input_text" maxlength="4" />
+									</div>
+								</li>
+							</ul>
+						</div>
+						<font id="chk_phone" name="chk_phone"></font>
+					</dd>
+				</dl>
+			</div>
+			<!-- .핸드폰번호 -->
+			<!-- 직장전화 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="signup_input1_1" class="label_text">직장전화</label></dt>
+					<dd>
+
+						<div class="bs_pr_bx max_300">
+							<div class="bs_inputbx">
+                                            <input  type="text" id="jiktel" name="jiktel" title="직장전화" class="form-control" description="직장전화" placeholder="직장전화" />
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- .직장전화 -->
+			<!-- 신청경로 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="pwd_check" class="label_text">신청경로<span class="necessary">*</span></label></dt>
+					<dd>
+						<div class="form_tel_bx">
+							<ul>
+								<li>
+									<div class="keyword_seletbx">
+										<select id="jointype" name="jointype">
+											<option value="">선택</option>
+
+											<option value="1">네이버키워드검색</option>
+											<option value="2">네이버,다음 블로그나 카페를 통하여 홈페이지 검색</option>
+											
+										</select>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- .신청경로 -->
+
+			<!-- 검색키워드 -->
+			<div class="bs_form_itembx" id="searchKeyword" name="searchKeyword" style="display:none">
+				<dl>
+					<dt><label for="signup_input1_1" class="label_text">검색키워드<span class="necessary">*</span></label></dt>
+					<dd>
+						<div class="bs_pr_bx max_300">
+							<div class="bs_inputbx">
+                                            <input type="text" id="joinkeyword" name="joinkeyword" title="검색키워드" class="form-control" description="검색키워드" placeholder="검색키워드" />
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- .검색키워드 -->
+
+			<!-- 주소 -->
+			<div class="bs_form_itembx">
+				<dl>
+					<dt><label for="address_input" class="label_text">주소 </label></dt>
+					<dd>
+						<div class="bs_pr_bx max_435 pr_130">
+							<div class="bs_inputbx">
+                               <input type="text" class="input_text" id="zipcode" name="zipcode" description="우편번호" placeholder="우편번호" >
+							</div>
+							<button type="button" onclick="zipsearch()" class="bs_sm_btnbx gray max_120">주소 찾기</button>
+						</div>
+						<div class="bs_inputbx mt_5">
+							<input type="text" class="input_text max_800" id="address1" name="address1" description="기본주소" placeholder="기본주소"  />
+						</div>
+						<div class="bs_inputbx mt_5">
+							<input type="text" class="input_text max_800" id="address2" name="address2" description="상세주소" placeholder="상세주소" />
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--button-->
+		<div class="sign_footer">
+			<div class="bs_btnbx">
+			<ul>
+				<!--li><input type="submit" id="btnRegist" class="bs_btn_item blue" value="회원가입 완료"></li-->
+				<li><input type="submit" id="BTN_INPUT_USER" name="BTN_INPUT_USER" class="bs_btn_item blue" value="회원가입 완료"></li>
+			</ul>
+			</div>
+		</div>
+		<!--button-->
+		<!-- 회원가입 폼 E -->
+					
+				
+	</form>
+	
+	</div>
+	</div>
+	</div>
+	</section>
+</body>
+</html>
